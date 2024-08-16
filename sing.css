@@ -1,0 +1,109 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    height: 100vh;
+    margin: 0;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: relative;
+}
+
+.ship, .ship2 {
+    width: 300px; /* تغيير حجم الدوائر لتناسب اللوحة */
+    height: 300px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+
+h1 {
+    text-align: center;
+    color: aliceblue;
+    font-size: 70px;
+    margin: 0;
+    position: relative;
+    z-index: 10;
+}
+
+.h1 {
+    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    z-index: 10;
+}
+
+.big {
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.13);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
+}
+
+.let {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input1 {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.input1 input {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background: transparent;
+    color: #fff;
+    outline: none;
+}
+
+.input1 label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 18px;
+    color: #999;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.input1 input:focus + label,
+.input1 input:not(:placeholder-shown) + label {
+    top: -18px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.submit-btn {
+    width: 100px;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    background-color: rgba(255, 255, 255, 0.13);
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 2px rgb(238, 238, 238);
+    position: relative;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-btn:hover {
+    background-color: #30CFD0;
+}
